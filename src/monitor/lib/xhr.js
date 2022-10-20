@@ -1,6 +1,5 @@
-import tracker from "../utils/tracker";
 
-export function injectXHR() {
+export function injectXHR(tracker) {
   let XMLHttpRequest = window.XMLHttpRequest;
   let oldOpen = XMLHttpRequest.prototype.open;
   XMLHttpRequest.prototype.open = function (method, url, async) {

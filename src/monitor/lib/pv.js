@@ -1,5 +1,4 @@
-import tracker from "../util/tracker";
-export function pv() {
+export function pv(tracker) {
   var connection = navigator.connection;
   tracker.send({
     kind: "business",

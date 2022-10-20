@@ -1,9 +1,9 @@
-import tracker from "../utils/tracker";
 import onload from "../utils/onload";
 import getLastEvent from "../utils/getLastEvent";
+import formatTime from "../utils/formatTime";
 import getSelector from "../utils/getSelector";
 
-export function timing() {
+export function timing(tracker) {
   let FMP, LCP;
   // 增加一个性能条目的观察者
   new PerformanceObserver((entryList, observer) => {
