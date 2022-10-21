@@ -1,1 +1,2 @@
-import './monitor/index'
+import Monitor from './monitor/index';
+export default Monitor;

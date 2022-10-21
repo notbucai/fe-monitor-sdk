@@ -10,6 +10,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "monitor.js",
+    library: "FeMonitor",
+    libraryExport: "default",
+    libraryTarget: "umd"
   },
   devServer: {
     // devServer静态文件根目录
